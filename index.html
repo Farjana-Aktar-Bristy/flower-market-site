@@ -6,11 +6,51 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
     </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Flower Market site</title>
   </head>
   <body class="inter-normal container">
-    <header></header>
+    <header>
+      <div class="navbar-container">
+        <div class="nav-logo">
+          <img src="./assets/logo.png" alt="website logo" />
+        </div>
+        <div>
+          <ul class="nav-item-container">
+            <li class="nav-item"><a class="nav-link dark-01">Home</a></li>
+            <li class="nav-item"><a class="nav-link dark-02">Shop</a></li>
+            <li class="nav-item"><a class="nav-link dark-02">About us</a></li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-link-img">
+                <div>
+                  <img src="./assets/shopping-cart.svg" alt="" />
+                </div>
+                Cart($56)
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- For mobile device -->
+      <div class="nav-mbl-container">
+        <div class="nav-logo">
+          <img src="./assets/logo.png" alt="website logo" />
+        </div>
+        <div class="nav-mbl-link">
+          <div>
+            <img src="./assets/shopping-cart.svg" alt="" />
+          </div>
+          <div>Cart($56)</div>
+        </div>
+      </div>
+    </header>
     <main></main>
     <footer></footer>
   </body>
