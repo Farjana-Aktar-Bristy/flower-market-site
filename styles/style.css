@@ -1,0 +1,10 @@
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
