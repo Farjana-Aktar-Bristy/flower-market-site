@@ -29,6 +29,7 @@
 #colored-title {
   color: rgba(233, 90, 8, 1);
 }
+
 /* Navbar style section */
 .navbar-container {
   display: flex;
@@ -74,6 +75,46 @@
   font-size: 65px;
 }
 
+/* Our Plants style section */
+.plant-title {
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.plant-info {
+  text-align: center;
+  font-size: 20px;
+  margin: 16px 85px 50px 85px;
+}
+.plant-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.plant-card {
+  text-align: center;
+}
+.plant-card-info {
+  margin-top: 20px;
+}
+.card-title {
+  font-size: 22px;
+  font-weight: 500;
+}
+.card-price {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+.card-btn {
+  background-color: rgb(233, 90, 8);
+  color: rgb(255, 255, 255);
+  padding: 20px 50px;
+  width: 100%;
+  font-weight: 600;
+}
 /* Responsive design for desktop view*/
 @media only screen and (min-width: 768px) {
   .nav-mbl-container {
