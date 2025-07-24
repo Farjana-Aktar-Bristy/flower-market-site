@@ -122,16 +122,19 @@
   gap: 80px;
   margin-top: 200px;
 }
+.plant-lover {
+  position: relative;
+  display: inline-block;
+}
 .flower-lover-store {
   position: relative;
 }
 .trusted-lover-badge {
   position: absolute;
-
-  left: 450px;
-  top: 1950px;
-  /* box-shadow: -4px 10px 4px 0px rgba(0, 0, 0, 0.25); */
+  top: -120px;
+  right: -100px;
 }
+
 .trusted-badge {
   width: 250px;
   height: 250px;
@@ -150,6 +153,89 @@
   font-size: 20px;
   margin-bottom: 20px;
 }
+
+/* Latest Deal Section */
+
+.deal-container {
+  margin: 120px 0;
+}
+.deal-info {
+  text-align: center;
+}
+.deal-title {
+  font-family: "Noto Serif", serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+.deal-description {
+  font-size: 20px;
+  margin: 0 50px;
+}
+.deal-img-container {
+  display: flex;
+  margin-top: 70px;
+  gap: 30px;
+}
+.deal-img-left {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 33%;
+}
+.deal-img-right {
+  width: 67%;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+}
+.bloom-title,
+.ana-title {
+  font-family: "Noto Serif", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.zabo-title {
+  font-family: "Noto Serif", serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+.bloom-shop,
+.ana-shop {
+  font-weight: 600;
+  font-size: 16x;
+  text-decoration: underline;
+}
+.zabo-shop {
+  font-weight: 600;
+  font-size: 30x;
+  text-decoration: underline;
+}
+.deal-bloom {
+  background-image: url(../assets/deal-bloom.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 14px;
+}
+.deal-ana {
+  background-image: url(../assets/deal-ana.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 14px;
+}
+.deal-zabo {
+  background-image: url(../assets/deal-zabo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 420px;
+  border-radius: 14px;
+}
+
 /* Responsive design for desktop view*/
 @media only screen and (min-width: 768px) {
   .nav-mbl-container {
@@ -185,8 +271,25 @@
     padding: 0;
     gap: 18px;
   }
-
+  .plant-lover {
+    text-align: center;
+  }
   .trusted-lover-badge {
     display: none;
+  }
+  .deal-img-container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 20px;
+  }
+  .deal-img-left {
+    width: 100%;
+  }
+  .deal-img-right {
+    width: 100%;
+  }
+  .deal-bloom,
+  .deal-ana {
+    height: 420px;
   }
 }
