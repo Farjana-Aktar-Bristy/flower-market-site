@@ -12,8 +12,7 @@
   font-style: normal;
 }
 .container {
-  /* max-width: 1140px; */
-  max-width: 80%;
+  max-width: 1140px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -112,7 +111,7 @@
   background-color: rgb(233, 90, 8);
   color: rgb(255, 255, 255);
   padding: 20px 50px;
-  width: 100%;
+  width: 270px;
   font-weight: 600;
   border: none;
 }
