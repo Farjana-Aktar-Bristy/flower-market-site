@@ -12,7 +12,8 @@
   font-style: normal;
 }
 .container {
-  max-width: 1140px;
+  /* max-width: 1140px; */
+  max-width: 80%;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -114,6 +115,7 @@
   padding: 20px 50px;
   width: 100%;
   font-weight: 600;
+  border: none;
 }
 
 /* Flower and Plants Lover Section */
@@ -215,27 +217,72 @@
   text-decoration: underline;
 }
 .deal-bloom {
-  background-image: url(../assets/deal-bloom.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
+    url(../assets/deal-bloom.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px;
   border-radius: 14px;
+  /* background: rgba(0, 0, 0, 0.4), url(image); */
 }
 .deal-ana {
-  background-image: url(../assets/deal-ana.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
+    url(../assets/deal-ana.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px;
   border-radius: 14px;
 }
 .deal-zabo {
-  background-image: url(../assets/deal-zabo.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
+    url(../assets/deal-zabo.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 420px;
   border-radius: 14px;
 }
 
+/* Join section */
+.join-container {
+  background-image: url(../assets/news-letter-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 530px;
+  margin: 0;
+}
+.join-info {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 40%;
+}
+.join-title {
+  font-family: "Noto Serif", serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 1);
+}
+.email-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+#email-input {
+  width: 600px;
+  height: 50px;
+  padding: 8px 20px;
+}
+.email-btn {
+  background-color: rgb(233, 90, 8);
+  color: rgb(255, 255, 255);
+  padding: 26px 50px;
+  width: 100%;
+  font-weight: 600;
+  border: none;
+}
 /* Responsive design for desktop view*/
 @media only screen and (min-width: 768px) {
   .nav-mbl-container {
@@ -291,5 +338,14 @@
   .deal-bloom,
   .deal-ana {
     height: 420px;
+  }
+  .join-container {
+    height: 275px;
+  }
+  .join-title {
+    font-size: 22px;
+  }
+  #email-input {
+    width: 220px;
   }
 }
