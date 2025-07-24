@@ -39,7 +39,6 @@
 }
 .nav-item-container {
   display: flex;
-
   list-style: none;
 }
 .nav-link {
@@ -283,6 +282,34 @@
   font-weight: 600;
   border: none;
 }
+
+/* Footer style section */
+.footer-container {
+  padding: 50px 160px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-info {
+  height: 180px;
+  width: 360px;
+}
+
+.footer-tag-left,
+.footer-tag-right {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.footer-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  height: 36px;
+}
+#twittwer-icon {
+  width: 20px;
+  height: 18px;
+}
 /* Responsive design for desktop view*/
 @media only screen and (min-width: 768px) {
   .nav-mbl-container {
@@ -305,6 +332,10 @@
   }
   .banner-title {
     font-size: 24px;
+  }
+  .plant-info {
+    font-size: 16px;
+    margin: 16px 25px;
   }
   .plant-card-container {
     display: grid;
@@ -347,5 +378,14 @@
   }
   #email-input {
     width: 220px;
+  }
+  .footer-container {
+    padding: 50px 160px 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-info {
+    height: 150px;
   }
 }
