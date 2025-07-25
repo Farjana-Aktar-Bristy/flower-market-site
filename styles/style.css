@@ -11,6 +11,9 @@
   font-weight: normal;
   font-style: normal;
 }
+body {
+  overflow-x: hidden;
+}
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -111,7 +114,7 @@
   background-color: rgb(233, 90, 8);
   color: rgb(255, 255, 255);
   padding: 20px 50px;
-  width: 270px;
+  width: 100%;
   font-weight: 600;
   border: none;
 }
@@ -148,6 +151,7 @@
   font-family: "Noto Serif", serif;
   font-weight: bold;
   font-size: 50px;
+  width: 400px;
 }
 .plant-lover-info ul li {
   font-size: 20px;
@@ -245,21 +249,20 @@
   background-image: url(../assets/news-letter-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 530px;
-  margin: 0;
+  height: 650px;
+  margin: -8px;
 }
 .join-info {
   display: flex;
   gap: 20px;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  top: 40%;
 }
 .join-title {
   font-family: "Noto Serif", serif;
   font-weight: bold;
   font-size: 60px;
+  margin-top: 250px;
   color: rgba(255, 255, 255, 1);
 }
 .email-container {
@@ -269,17 +272,19 @@
   flex-direction: row;
 }
 #email-input {
-  width: 600px;
+  width: 650px;
   height: 50px;
   padding: 8px 20px;
+  border: none;
 }
 .email-btn {
   background-color: rgb(233, 90, 8);
   color: rgb(255, 255, 255);
-  padding: 26px 50px;
+  padding: 25px 50px;
   width: 100%;
   font-weight: 600;
   border: none;
+  cursor: pointer;
 }
 
 /* Footer style section */
@@ -326,11 +331,16 @@
     flex-direction: column-reverse;
     margin: 0;
   }
-  .banner-description {
-    margin: 30px 16px 65px 16px;
+  .banner-img-container {
+    margin-right: -8px;
   }
   .banner-title {
     font-size: 24px;
+    margin-top: 28px;
+  }
+  .plant-title {
+    font-size: 24px;
+    margin-top: 60px;
   }
   .plant-info {
     font-size: 16px;
@@ -351,13 +361,19 @@
   .plant-lover {
     text-align: center;
   }
+  .plant-lover-title {
+    width: 100%;
+    font-size: 24px;
+  }
   .trusted-lover-badge {
     display: none;
+  }
+  .deal-title {
+    font-size: 24px;
   }
   .deal-img-container {
     display: flex;
     flex-direction: column;
-    margin: 50px 20px;
   }
   .deal-img-left {
     width: 100%;
@@ -370,21 +386,29 @@
     height: 420px;
   }
   .join-container {
-    height: 275px;
+    height: 390px;
+    margin: -10px;
   }
   .join-title {
     font-size: 22px;
+    margin-top: 150px;
   }
   #email-input {
     width: 220px;
+    border: none;
   }
   .footer-container {
-    padding: 50px 160px 50px 20px;
+    padding: 50px 160px 50px 0;
     display: flex;
     flex-direction: column;
+
     gap: 20px;
   }
   .footer-info {
     height: 150px;
+  }
+
+  .image-full {
+    width: 100%;
   }
 }
